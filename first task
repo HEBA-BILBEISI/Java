@@ -1,0 +1,175 @@
+/* 1. Write a JavaScript program that accept two integers and
+ * display the larger.Go to the editor */
+/******* Start Your Code *********/
+  
+var x= 10;
+var y =15;
+if (y>=x);
+
+console.log ('larger')
+
+
+ /******* End Your Code ********* */
+
+/* 2. Write a JavaScript conditional statement to find the sign
+ of product of three numbers. Display an alert box with the 
+ specified sign. Go to the editor 
+Sample numbers : 3, -7, 2 
+Output : The sign is - */
+/******* Start Your Code *********/
+  
+
+
+ /******* End Your Code ********* */
+
+
+/* 3. Write a JavaScript conditional statement to sort three numbers. Display an alert box to show the result. Go to the editor 
+Sample numbers : 0, -1, 4 
+Output : 4, 0, -1 */
+
+/******* Start Your Code *********/
+var numArray = [14, 200, 99];
+numArray.sort(function(a, b) {
+  return a - b;
+});
+
+console.log(numArray);
+
+
+ /******* End Your Code ********* */
+
+
+/*4. Write a JavaScript conditional statement to find the largest of five numbers. 
+Display an alert box to show the result. Go to the editor 
+Sample numbers : -5, -2, -6, 0, -1 
+Output : 0 */
+
+/******* Start Your Code *********/
+var x= 0;
+var y=-1;
+var z= 4;
+var a= 5;
+var b =10;
+if (x>y && x>z && x>a && x>b)
+{
+        if (y>z>a>b)
+        {
+            console.log(x + ", " + y + ", " +z +","+ a +","+ b);
+        }
+        else
+        {
+            console.log(x + ", " + z + ", " +y+", " + a +","+ b);
+        }
+}
+else if (y>x && y >z && y>a && y>b)
+{
+        if (x>z>y>a>b)
+        {
+             console.log(y + ", " + x + ", " +z + "a"+ ","+b);
+        }
+        else
+        {
+             console.log(y + ", " + z + ", " +x+","+a +","+b);
+        }
+}
+else if (z>x && z>y && z>a && z> b)
+{
+        if (x>y>z>a>b)
+        {
+            console.log(z + ", " + x + ", " +y+ ","+a + ","+ b);
+        }
+        else
+        {
+            console.log(z + ", " + y + ", " +x + ","+a +","+ b);
+        }
+}   
+else if (a>x && a>y && a>z && a> b)
+{
+        if (a>x>y>z>b)
+        {
+            console.log(a + ", " + b + ", " +x +","+ y +","+z);
+        }
+        else
+        {
+            console.log(z + ", " + y + ", " +x);
+        }
+}   
+else if (b>x && b>y && b>z && b>a)
+{
+        if (b>x>y>z>a)
+        {
+            console.log(a + ", " + x + ", " +y + ","+ z);
+        }
+        else
+        {
+            console.log(a + ", " + x + ", " +y+ ","+ z+","+b);
+        }
+}   
+
+
+ /******* End Your Code ********* */
+
+
+ /* 5.Write the if statement to display "Hello World" if x is greater than y, otherwise alert "Goodbye".*/
+
+/******* Start Your Code *********/
+let x = 10;
+     
+if(x >= 10){
+  console.log("Hello World")
+
+}
+else
+console.log("GoodBye")
+
+
+ /******* End Your Code ********* */
+
+
+
+
+ /******* the second task ********* */
+
+ import java.util.*;
+ 
+ public class Main {
+  
+     static void reverse(String myArray[])
+     {
+         Collections.reverse(Arrays.asList(myArray));
+         System.out.println("Reversed Array:" + Arrays.asList(myArray));
+     }
+  
+      public static void main(String[] args)
+     {
+         String [] myArray = {"one", "Two", "Three", "Four", "Five", "Six","Seven"};
+         System.out.println("Original Array:" + Arrays.asList(myArray));
+         reverse(myArray);
+     }
+
+
+ /******* the Third task ********* */
+
+     import java.until.*;
+class marks 
+{
+publica static void main (srting args[])
+{
+    int Math, English, Arabic, Bio, Computer, Religion ,total ;
+    double per ;
+
+system.out.println("enter makrs of 6 subjects")
+math = sc.nextInt( );
+English = sc.nextInt( );
+Arabic= sc.nextInt( );
+Bio = sc.nextInt( );
+Computer = sc.nextInt( );
+Religion = sc.nextInt( );
+total = Math+ Englih+ Arabic+ Bio+ Computer+ Religion ;
+per = (total/600.0)*100;
+
+
+
+}
+}
+
