@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1> task 18/10/2020 </h1>
+<p id="demo"></p>
+<script>
+  function tellFortune {
+var x = 
+job : "fainance",loc: "UK",partner:"lolcy" ,child : "5",
+
+y = 
+job : "manger",loc: "USA",partner:"Memo" ,child : "1" ;
+  }
+console.log(
+  "His job" + x.job+ " " +"In"+ x.loc+ " "+"his partner "+x.partner + " "+"thier chidren "+ x.child) ;+ <br>
+
+console.log(
+ "His job" + y.job+ " " +"In"+ y.loc+ " "+"his partner "+y.partner + " "+"thier chidren "+ y.child) ;
+
+
+
+
+
+
+
+</script>
+</body>
+</html>
