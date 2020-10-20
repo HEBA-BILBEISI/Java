@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+
+    <title>Document</title>
+<style>
+.form {
+
+border: double black;
+width: 600px;
+height: 450px;
+text-align: center;
+background-color: darkslategrey;
+color: #d6e0f0;
+}
+
+input[type=text],
+select {
+width: 500px;
+padding: 12px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid green;
+border-radius: 25px;
+box-sizing: border-box;
+
+}
+
+input[type=submit] {
+width: 200px;
+background-color: #4CAF50;
+color: white;
+padding: 14px 20px;
+margin: 8px 0;
+border: none;
+border-radius: 10px;
+cursor: pointer;
+}
+
+input[type=submit]:hover {
+background-color: rgb(165, 252, 115);
+}
+
+
+.flex-container {
+display: flex;
+flex-direction: row;
+font-size: 20px;
+text-align: center;
+
+}
+
+@media (max-width: 800px) {
+.flex-container {
+    flex-direction: column;
+}
+}
+.fa::before {
+font-size: 40px;
+display: block;
+padding:  5px 10px;
+border-right:  2px solid gray;
+color: greenyellow;
+text-shadow: 1px 1px red ;
+
+}
+
+
+
+</style>
+</head>
+<body>
+<center>
+        <div class="form">
+            <form>
+                <center>
+                    <h3>Create an Account</h3>
+                </center>
+<hr>
+                <label for="fname"></label>
+                <i class="fas fa-address-book"></i>
+                <input type="text" id="fname" name="yourname" placeholder="Name" required> <br>
+
+                <label for="Number"></label>
+                <i class="fas fa-phone-volume"></i>
+                <input type="text"  id="lname" name="lastname" placeholder="Phone Number" required> <br>
+
+                <label for="Email"></label>
+                <i class="fas fa-envelope"></i>
+                <input type="text" id="lname" name="lastname" placeholder="Email" required> <br>
+
+                <label for="Password"></label>
+                <i class="fas fa-lock"></i>
+                <input type="text" id="lname" name="lastname" placeholder="Password" required> <br>
+
+
+
+                <input type="checkbox" value="cheak"><sup> I agree to the <ins>Terms and conditions</ins> and <ins>privacy policy</ins></sup>
+                <br>
+                <input type="submit" value="Create Account">
+            </form>
+        </div>
+        <script src="check-letters-numbers-regular expression.js">
+             < src="phoneno-all-numeric-validation.js">
+        </script>
+</center>
+
+
+
+</body>
+</html>
+
+
+
+**********************************************************************
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <script>
+function stopwatch (){
+let startTime,endTime , running , duraiton = 0;
+
+this.start = function (){
+ if(running)
+ throw new Error ('stopwatch has already started.')
+ running = true ;
+ startTime = new Date ();
+};
+
+this.stop= function (){
+if (!running)
+throw new Error ('stopwatch is not started.');
+running : false ;
+endTime = new Date ();
+
+const seconds = (endTime.getTime() - startTime.getTime())/1000;
+duraiton+= seconds;
+
+};
+
+this.reset= function (){
+    startTime = null;
+    endTime = null;
+    running = false;
+    duraiton = 0 ;
+};
+
+Object.defineProperty(this , 'duration',{
+get : function(){ return duraiton ;}
+});
+}
+
+
+
+
+
+
+
+   </script> 
+
+</body>
+</html>
+
+
+**********************************************************
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>19-10-2020</title>
+</head>
+<body>
+  <script>
+let object = {
+person :{
+    height : "180",
+    width : "50",
+}
+
+car :{
+    type :"Ford",
+    color :"red",
+}
+animal :{
+    pets : "cat",
+kind : " sherazi"
+}
+}
+
+
+
+
+
+
+
+  </script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
