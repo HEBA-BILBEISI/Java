@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //class #1
+class Person {
+  Greeting (id,name ,age) { 
+      this.id = 99994444 ;
+      this.name = Heba;
+      this.age = 26;
+   }
+  
+   printObject(){
+       console.log("The id:" +this.id +",name:"+ this.name +"age" + " " + this.age);
+   }
+}
+class Teacher extends Person{
+    constructor(id ,name, age, salari){
+        super(id ,name, age);
+        this.salari = 2000;
+    }
+    showSalari() {
+            console.log("My salari is " + this.salari);
+        }
+    printObject(){
+       console.log("The id: " +this.id +"the name" +this.name +", age:"+ this.age+", salari:"+ this.salari);
+   }
+
+
+//class #2
+
+class Car {
+srart (id, type ,year) { 
+    this.id = id;
+    this.type = type;
+    this.year= year;
+ }
+ printObject2(){
+     console.log("the car is running.. car id:" +this.id +", type:"+ this.type + " "+ "year of production :" + this.year);
+ }
+}
+var car1 = new Car("Ford","red");
+   console.log= new car ;
+  
+//class #3
+class Animal {
+ homeAnimal (id,name ,isPet) { 
+      this.id =id;
+      this.name =cat;
+      this.isPet= pet ;
+
+   printObject(){
+       console.log("Animal id:" +this.id +",name:"+ this.name +"his kind" + " " + this.pet);
+   }
+}
+
+
+
+
+
+  </script>
+</body>
+</html>
