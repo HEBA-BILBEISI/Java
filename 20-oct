@@ -57,7 +57,7 @@ text-align: center;
 
 }
 
-@media (max-width:100%) {
+@media (max-width:800px) {
 .flex-container {
     flex-direction: column;
 }
@@ -86,7 +86,7 @@ text-align: center;
                 <label for="Number"></label>
                 <i class="fas fa-phone-volume"></i>
                 <input type="text"  id="lname" name="lastname" placeholder="Phone Number" required> <br>
-
+<!-- <span>the Number must be in the format of (555)555-555-555 </span>-->
                 <label for="Email"></label>
                 <i class="fas fa-envelope"></i>
                 <input type="text" id="lname" name="lastname" placeholder="Email" required> <br>
@@ -95,6 +95,7 @@ text-align: center;
                 <i class="fas fa-lock"></i>
                 <input type="text" id="lname" name="lastname" placeholder="Password" required> <br>
 
+<!-- <span>Must contain a lowrtcase ,uppercase letter and number  </span> -->
 
 
                 <input type="checkbox" value="cheak"><sup> I agree to the <ins>Terms and conditions</ins> and <ins>privacy policy</ins></sup>
