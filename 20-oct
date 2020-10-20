@@ -57,22 +57,17 @@ text-align: center;
 
 }
 
-@media (max-width: 800px) {
+@media (max-width:100%) {
 .flex-container {
     flex-direction: column;
 }
 }
-.fa::before {
-font-size: 40px;
-display: block;
-padding:  5px 10px;
-border-right:  2px solid gray;
-color: greenyellow;
-text-shadow: 1px 1px red ;
+.fas{
+    color: dimgrey;
+    font-size: 20 px;
+    padding:30px ;
 
 }
-
-
 
 </style>
 </head>
@@ -107,17 +102,13 @@ text-shadow: 1px 1px red ;
                 <input type="submit" value="Create Account">
             </form>
         </div>
-        <script src="check-letters-numbers-regular expression.js">
-             < src="phoneno-all-numeric-validation.js">
-        </script>
+       
 </center>
 
-
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
 
 </body>
 </html>
-
-
 
 **********************************************************************
 
