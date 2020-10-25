@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+
+     * {
+            box-sizing: border-box;
+         
+        }
+
+
+
+        body {
+            margin: 0;
+            padding: 5px;
+            height: 100vh;
+            background-image: linear-gradient(120deg, #ffd5cd, #efbbcf, #c3aed6,#8675a9);
+
+            background-size: cover;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+                  align-items: center;
+            flex-wrap: wrap;
+            flex-direction: row;
+            top: 25vh;
+            position: relative;
+
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            padding: 10px;
+            width: 400px;
+            background-color: azure;
+            background-size: cover;
+            border-radius: 10px;
+            border: black 5px solid;
+            position: relative;
+            color: white;
+            text-shadow: black 8px 8px;
+        }
+
+   
+        select,
+        input {
+           
+
+            padding: 5px;
+            margin: 5px;
+
+            border-radius: 10px;
+        }
+
+        .submit {
+            background-color: rgb(127, 180, 201);
+
+            cursor: pointer;
+            color: white;
+
+            border-style: solid;
+            border-color: black;
+        }
+
+        .clear {
+            background-color: rgb(228, 142, 159);
+            color: white;
+            border-style: solid;
+            border-color: black;
+            cursor: pointer;
+        }
+
+        p {
+            top: 20vh;
+            position: relative;
+            text-align: center;
+        }
+
+    </style>
+</head>
+
+<body onload="retData()">
+
+    <div class="container">
+
+        <form>
+            <label for="key">Key</label>
+            <input type="text" id="key">
+            <label for="value"> value</label>
+            <input type="text" id="value">
+            <select id="select">
+                <option selected hidden>Select Storge location.</option>
+                <option value="Local Storge">Local Storge</option>
+                <option value="Session Storge">Session Storge</option>
+
+            </select>
+            <input class="submit" type="submit" onclick="myfunction()">
+            <input class="clear" type="submit" value="Clear" onclick="clr()">
+
+        </form>
+
+
+
+    </div>
+    <P id="txt"></p>
+    <P id="txt2"></p>
+
+
+    <script>
+
+
+        function myfunction() {
+
+
+            switch (document.getElementById("select").value) {
+
+                case "Local Storge":
+                    localStorage.setItem(document.getElementById("key").value, document.getElementById("value").value);
+                    break;
+                case "Session Storge":
+                    sessionStorage.setItem(document.getElementById("key").value, document.getElementById("value").value)
+                    break;
+                default: alert("You must Select storge location");
+
+            }
+        }
+
+        function retData() {
+
+
+            if (localStorage.getItem("Full Name") != null) {
+                document.getElementById("txt").innerHTML = `This data was retrieved from <span style="color:green">localStoge </span> : ${localStorage.getItem("Full Name")}`;
+            }
+
+
+            if (sessionStorage.getItem("Full Name") != null) {
+                document.getElementById("txt2").innerHTML = ` and this data retrived from <span style="color:red">sessionStorge</span> : ${sessionStorage.getItem("Full Name")}`;
+            }
+        }
+
+
+
+     function clr(){
+         sessionStorage.clear();
+         localStorage.clear();
+        
+     }
+
+    </script>
+
+</body>
+
+</html>
